@@ -1,7 +1,7 @@
 version: "3"
 services:
   reverseproxy:
-      image: konerto/udagram-reverseproxy
+      image: konerto/reverseproxy
       ports:
           - 8080:8080
       restart: always
