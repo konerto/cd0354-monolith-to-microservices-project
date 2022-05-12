@@ -1,20 +1,20 @@
 version: '3'
 services:
-  udagram-user:
+  udagram-api-user:
     build:
       context: ../../udagram-api-user
       dockerfile: Dockerfile
-    image: konerto/udagram-user
-  udagram-feed:
+    image: konerto/udagram-api-user
+  udagram-api-feed:
     build:
       context: ../../udagram-api-feed
       dockerfile: Dockerfile
-    image: konerto/udagram-feed
-  reverseproxy:
+    image: konerto/udagram-api-feed
+  udagram-reverseproxy:
     build:
-      context: .
+      context: ../../udagram-reverseproxy
       dockerfile: Dockerfile
-    image: konerto/reverseproxy
+    image: konerto/udagram-reverseproxy
   udagram-frontend:
     build:
       context: ../../udagram-frontend  

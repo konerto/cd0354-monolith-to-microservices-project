@@ -9,7 +9,7 @@ services:
         - udagram-user
         - udagram-feed     
   udagram-user:
-    image: konerto/udagram-user
+    image: konerto/udagram-api-user
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
@@ -23,7 +23,7 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: $URL
   udagram-feed:
-    image: konerto/udagram-feed
+    image: konerto/udagram-api-feed
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
