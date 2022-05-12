@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: konerto/reverseproxy:v1
+      - image: konerto/udagram-reverseproxy:v1
         name: konerto        
         resources:
           requests:
